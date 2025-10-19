@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: compres-bot
+    runtime: python
+    repo: https://github.com/mandidev/compress-bot
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: API_HASH
+        sync: ff9d2b13d574fd0206a14bd3ceac7502
+      - key: API_ID
+        value: 23053083
+      - key: BOT_TOKEN
+        value: 8399602027:AAFHRZOoyQFjFHFLXnbEL2GT5KazowfRO0M
+      - key: HOST
+        value: https://dashboard.render.com/
+
